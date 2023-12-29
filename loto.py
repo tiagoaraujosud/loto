@@ -26,9 +26,11 @@ bola24 = 0
 bola25 = 0
 
 bolas = []
+bolasup = []
+bolasdown = []
 contador = 2
     
-with open("teste.txt") as book:
+with open("lotofacil.txt") as book:
     while contador != 26:
         for i, line in enumerate(book):
             clean_line = line.strip()
@@ -74,7 +76,7 @@ with open("teste.txt") as book:
                 elif each_col == '19':
                     bola19 += 1
                 elif each_col == '20':
-                    bola20= 1
+                    bola20 += 1
                 elif each_col == '21':
                     bola21 += 1
                 elif each_col == '22':
@@ -113,3 +115,13 @@ with open("teste.txt") as book:
     bolas.append(bola25)
     
     print(bolas)
+    
+    bolasup = sorted(bolas)
+    
+    
+    
+    
+    
+    
+    
+    
