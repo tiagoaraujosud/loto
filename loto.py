@@ -33,56 +33,58 @@ with open("teste.txt") as book:
         for i, line in enumerate(book):
             clean_line = line.strip()
             data = clean_line.split("\t")
-            if data[contador] == '1':
-                bola1 += 1
-            elif data[contador] == '2':
-                bola2 += 1
-            elif data[contador] == '3':
-                bola3 += 1
-            elif data[contador] == '4':
-                bola4 += 1
-            elif data[contador] == '5':
-                bola5 += 1
-            elif data[contador] == '6':
-                bola6 += 1
-            elif data[contador] == '7':
-                bola7 += 1
-            elif data[contador] == '8':
-                bola8 += 1
-            elif data[contador] == '9':
-                bola9 += 1
-            elif data[contador] == '10':
-                bola10 += 1
-            elif data[contador] == '11':
-                bola11 += 1
-            elif data[contador] == '12':
-                bola12 += 1
-            elif data[contador] == '13':
-                bola13 += 1
-            elif data[contador] == '14':
-                bola14 += 1
-            elif data[contador] == '15':
-                bola15 += 1
-            elif data[contador] == '16':
-                bola16 += 1
-            elif data[contador] == '17':
-                bola17 += 1
-            elif data[contador] == '18':
-                bola18 += 1
-            elif data[contador] == '19':
-                bola19 += 1
-            elif data[contador] == '20':
-                bola20= 1
-            elif data[contador] == '21':
-                bola21 += 1
-            elif data[contador] == '22':
-                bola22 += 1
-            elif data[contador] == '23':
-                bola23 += 1
-            elif data[contador] == '24':
-                bola24 += 1
-            elif data[contador] == '25':
-                bola25 += 1
+            data.pop(0)
+            for each_col in data:
+                if each_col == '1':
+                    bola1 += 1
+                elif each_col == '2':
+                    bola2 += 1
+                elif each_col == '3':
+                    bola3 += 1
+                elif each_col == '4':
+                    bola4 += 1
+                elif each_col == '5':
+                    bola5 += 1
+                elif each_col == '6':
+                    bola6 += 1
+                elif each_col == '7':
+                    bola7 += 1
+                elif each_col == '8':
+                    bola8 += 1
+                elif each_col == '9':
+                    bola9 += 1
+                elif each_col == '10':
+                    bola10 += 1
+                elif each_col == '11':
+                    bola11 += 1
+                elif each_col == '12':
+                    bola12 += 1
+                elif each_col == '13':
+                    bola13 += 1
+                elif each_col == '14':
+                    bola14 += 1
+                elif each_col == '15':
+                    bola15 += 1
+                elif each_col == '16':
+                    bola16 += 1
+                elif each_col == '17':
+                    bola17 += 1
+                elif each_col == '18':
+                    bola18 += 1
+                elif each_col == '19':
+                    bola19 += 1
+                elif each_col == '20':
+                    bola20= 1
+                elif each_col == '21':
+                    bola21 += 1
+                elif each_col == '22':
+                    bola22 += 1
+                elif each_col == '23':
+                    bola23 += 1
+                elif each_col == '24':
+                    bola24 += 1
+                elif each_col == '25':
+                    bola25 += 1
         contador += 1
     bolas.append(bola1)
     bolas.append(bola2)
@@ -109,5 +111,5 @@ with open("teste.txt") as book:
     bolas.append(bola23)
     bolas.append(bola24)
     bolas.append(bola25)
-print(i)
-print(data)
+    
+    print(bolas)
