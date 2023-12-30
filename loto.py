@@ -29,6 +29,7 @@ bolas = []
 bolasup = []
 bolasdown = []
 contador = 2
+new_index = 0
     
 with open("lotofacil.txt") as book:
     while contador != 26:
@@ -114,9 +115,18 @@ with open("lotofacil.txt") as book:
     bolas.append(bola24)
     bolas.append(bola25)
     
-    print(bolas)
+    sorted_bolas = sorted(bolas)
     
-    bolasup = sorted(bolas)
+    for line in bolas:
+        for each_ball in sorted_bolas:
+            if line == each_ball:
+                new_index = bolas.index(line)
+                bolasup.append(new_index)
+
+print(bolasup)
+print(bolas)
+print(sorted_bolas)
+   
     
     
     
