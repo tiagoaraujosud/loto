@@ -125,6 +125,7 @@ with open("lotofacilatual.txt") as book:
 
 bolasdown = bolasup
 print(bolasup)
+print(sorted_bolas)
 print(bolas)
 
    
